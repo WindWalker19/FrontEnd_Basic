@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        #sum {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Cell 1</th>
+            <th>Cell 2</th>
+            <th>Cell 3</th>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>10</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>25</td>
+            <td>30</td>
+        </tr>
+    </table>
+
+    <p id="sum">Sum of all values: <span id="totalSum">0</span></p>
+
+    <script>
+        // Calculate the sum of all values in the table cells
+        var cells = document.querySelectorAll('td');
+        console.log(cells);
+        console.log(cells[0].textContent);
+        var totalSum = 0;
+
+        cells.forEach(function(cell) {
+            totalSum += parseInt(cell.textContent);
+        });
+
+        document.getElementById('totalSum').textContent = totalSum;
+    </script>
+</body>
+</html>
