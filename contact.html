@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Finook</title>
+    <style>
+      body {
+        /* Location of the image */
+        background-image: url(images/background-photo.jpg);
+
+        /* Image is centered vertically and horizontally at all times */
+        background-position: center center;
+
+        /* Image doesn't repeat */
+        background-repeat: no-repeat;
+
+        /* Makes the image fixed in the viewport so that it doesn't move when 
+       the content height is greater than the image height */
+        background-attachment: fixed;
+
+        /* This is what makes the background image rescale based on its container's size */
+        background-size: cover;
+
+        /* Pick a solid background color that will be displayed while the background image is loading */
+        background-color: #464646;
+
+        /* SHORTHAND CSS NOTATION
+     * background: url(background-photo.jpg) center center cover no-repeat fixed;
+     */
+      }
+      header {
+        color: white;
+        padding: 20px;
+      }
+
+      nav ul {
+        list-style-type: none;
+      }
+      nav li {
+        display: inline;
+        margin-right: 20px;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 16px;
+      }
+      .contact-form {
+        margin-top: 20px;
+      }
+      label {
+        font-weight: bold;
+      }
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 5px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+      input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+      footer {
+        text-align: center;
+        color: white;
+        padding: 10px 0;
+      }
+      center {
+        text-align: center;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <center><h1>Contact Us - Finook</h1></center>
+    <div class="container">
+      <h1>Contact Information</h1>
+      <p>
+        Have questions or need to get in touch with us? Please use the contact
+        form below, and we'll respond as soon as possible.
+      </p>
+      <div class="contact-form">
+        <form action="submit_contact_form.php" method="post">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2023 Finook</p>
+    </footer>
+  </body>
+</html>

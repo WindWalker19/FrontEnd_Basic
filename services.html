@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid white;
+        text-align: center;
+        color: white;
+      }
+      center {
+        text-align: center;
+        color: white;
+      }
+    </style>
+    <title>Home Page</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <br />
+    <br />
+    <br />
+    <center>The Book keeping calculator!</center>
+    <br />
+    <br />
+    <div style="overflow-x: auto">
+      <table style="width: 100%">
+        <tr>
+          <th>Product Name</th>
+          <th>Product Actual Price</th>
+          <th>Product Sold Price</th>
+          <th>Number of Product Sold</th>
+          <th>Product Real Cost</th>
+          <th>Product Store Cost</th>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" id="ProductName1" placeholder="Product Name" />
+          </td>
+          <td>
+            <input type="text" id="PAP1" placeholder="Product Actual Price" />
+          </td>
+          <td>
+            <input type="text" id="PSP1" placeholder="Product Sold Price" />
+          </td>
+          <td>
+            <input type="text" id="NPS1" placeholder="Number of Product Sold" />
+          </td>
+          <td><span id="PRC1">0</span></td>
+          <td><span id="PSC1">0</span></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" id="ProductName2" placeholder="Product Name" />
+          </td>
+          <td>
+            <input type="text" id="PAP2" placeholder="Product Actual Price" />
+          </td>
+          <td>
+            <input type="text" id="PSP2" placeholder="Product Sold Price" />
+          </td>
+          <td>
+            <input type="text" id="NPS2" placeholder="Number of Product Sold" />
+          </td>
+          <td><span id="PRC2">0</span></td>
+          <td><span id="PSC2">0</span></td>
+        </tr>
+      </table>
+      <br />
+      <br />
+    </div>
+    <br />
+    <br />
+    <div>
+      <center><button onclick="calculation()">Submit</button></center>
+    </div>
+    <script src="services.js"></script>
+    <footer>
+      <p>&copy; 2023 Finook</p>
+    </footer>
+  </body>
+</html>
+
+<!--
+
+
+<tr>
+  <td><input type="text" id="ProductName" name="Pname" value=""></td>
+  <td><input type="number" id="PAP" name="PAP" value="">0</td>
+  <td><input type="number" id="PSP" name="PSP" value="">0</td>
+  <td><input type="number" id="NPS" name="NPS" value="">0</td>
+  <td><input type="number" id="PRC" name="PRC" value="">0</td>
+  <td><input type="number" id="PSC" name="PSC" value="">0</td>
+</tr>
+<tr>
+  <td><input type="text" id="ProductName" name="Pname" value=""></td>
+  <td><input type="number" id="PAP" name="PAP" value="">0</td>
+  <td><input type="number" id="PSP" name="PSP" value="">0</td>
+  <td><input type="number" id="NPS" name="NPS" value="">0</td>
+  <td><input type="number" id="PRC" name="PRC" value="">0</td>
+  <td><input type="number" id="PSC" name="PSC" value="">0</td>
+
+  -->
